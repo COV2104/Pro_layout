@@ -175,6 +175,38 @@ a {
   font-size: 16px;
   font-weight: 400;
 }
+.featured .item {
+  position: relative;
+}
+.featured .item:hover .item__img {
+  filter: brightness(0.5);
+}
+.featured .item:hover .item__add {
+  display: flex;
+}
+.featured .item__add {
+  position: absolute;
+  top: 188px;
+  left: 111px;
+  border: 1px solid #fff;
+  width: 139px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  color: #FFFFFF;
+}
+.featured .item__add:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.featured .item__add:hover svg path {
+  fill: #F16D7F;
+}
 .featured .featured-button {
   text-align: center;
   margin-bottom: 95px;
@@ -220,6 +252,7 @@ a {
 .subscribe {
   background-image: url("img/shadow_footer.svg"), url("img/footer_back.png");
   background-size: cover;
+  background-position: center;
   min-height: 448px;
   display: flex;
   align-items: center;
@@ -245,7 +278,8 @@ a {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  line-height: 167.2%; /* 40.128px */
+  line-height: 167.2%;
+  /* 40.128px */
 }
 .subscribe .subtitle__request {
   color: #222224;
@@ -363,6 +397,8 @@ a {
 }
 .top-product .carousel-inner {
   height: 777px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .product-info {
@@ -475,4 +511,36 @@ a {
   color: #F16D7F;
   font-size: 16px;
   font-weight: 400;
+}
+.featured-catalog-product .item {
+  position: relative;
+}
+.featured-catalog-product .item:hover .item__img {
+  filter: brightness(0.5);
+}
+.featured-catalog-product .item:hover .item__add {
+  display: flex;
+}
+.featured-catalog-product .item__add {
+  position: absolute;
+  top: 188px;
+  left: 111px;
+  border: 1px solid #fff;
+  width: 139px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  color: #FFFFFF;
+}
+.featured-catalog-product .item__add:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.featured-catalog-product .item__add:hover svg path {
+  fill: #F16D7F;
 }/*# sourceMappingURL=style.css.map */
