@@ -7,3 +7,81 @@
     font-size: 14px;
     font-weight: 400;
 }
+
+@mixin featured-catalog-all {
+    .title__price {
+        padding: 7% 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 16px;
+        background: #F8F8F8;
+    }
+
+    .title__item {
+        color: $primaryTextColor;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .text__item {
+        color: #5d5d5d;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .price {
+        color: $colorSelectSite;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .item {
+        position: relative;
+    }
+
+    .item:hover .item__img {
+        -webkit-filter: brightness(0.5);
+        filter: brightness(0.5);
+    }
+
+
+    .item:hover .item__add {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .item__add {
+        position: absolute;
+        top: 188px;
+        left: 111px;
+        border: 1px solid #fff;
+        width: 139px;
+        height: 44px;
+        font-style: normal;
+        @include font_14_400;
+        line-height: 17px;
+        display: none;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 11px;
+        color: #FFFFFF;
+    }
+
+    .item__add:hover {
+        -webkit-box-shadow: 0 0 5px #fff;
+        box-shadow: 0 0 5px #fff;
+    }
+
+    .item__add:hover svg path {
+        fill: $colorSelectSite;
+    }
+
+}
+
