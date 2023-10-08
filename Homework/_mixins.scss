@@ -85,3 +85,52 @@
 
 }
 
+@mixin top-head-all {
+    .top-head {
+        background: #F8F3F4;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @include flex_center;
+        justify-content: space-between;
+            
+        &__heading {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $colorSelectSite;
+        }
+    
+        .breadcrumbs {
+            display: flex;
+    
+    
+            &__link {
+                color: #636363;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                transition: 0.3s;
+            }
+    
+            &__link:hover {
+                color: $colorSelectSite;
+            }
+    
+            &__link_site:hover {
+                text-shadow: 1px 1px 1px $primaryTextColor;
+            }
+        }
+    
+        .breadcrumbs__link:not(:last-child)::after {
+            content: "/";
+            padding: 0 8px;
+        }
+    
+        .breadcrumbs__link:last-child {
+            font-weight: 700;
+            color: $colorSelectSite;
+        }
+    }
+}

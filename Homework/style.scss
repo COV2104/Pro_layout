@@ -30,7 +30,8 @@ a {
 
 .header {
     background-color: $headerFooterColor;
-    padding: 20px 235px;
+    padding-top: 20px;
+    padding-bottom: 23px;
     display: flex;
     justify-content: space-between;
 
@@ -138,160 +139,8 @@ a {
     }
 }
 
-.content {
-    background: #f1e4e6;
-    @include flex_center;
-    justify-content: center;
-    margin-bottom: 4%;
-
-    &-left {
-        width: 100%;
-    }
-
-    &-right {
-        width: 100%;
-        @include flex_center;
-        gap: 1%;
-        padding-left: 4%;
-    }
-
-    .title {
-        color: #222;
-        font-size: 48px;
-        font-weight: 900;
-    }
-
-    .sudlitle {
-        color: #222;
-        font-size: 32px;
-        font-weight: 700;
-    }
-
-    .color {
-        color: $colorSelectSite;
-    }
-}
-
-.catalog-sale {
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 260px 180px;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 6%;
-
-    .women {
-        background-image: url(img/shadow_sale.svg), url(img/women.webp);
-        width: 360px;
-        height: 260px;
-    }
-
-    .women:hover {
-        background-image: url(img/women.webp);
-    }
-
-    .men {
-        background-image: url(img/shadow_sale.svg), url(img/men.webp);
-        width: 360px;
-        height: 260px;
-    }
-
-    .men:hover {
-        background-image: url(img/men.webp);
-    }
-
-    .kids {
-        background-image: url(img/shadow_sale.svg), url(img/kids.webp);
-        width: 360px;
-        height: 260px;
-    }
-
-    .kids:hover {
-        background-image: url(img/kids.webp);
-    }
-
-    .accesories {
-        background-image: url(img/shadow_sale.svg), url(img/accesories.webp);
-        width: 100%;
-        height: 100%;
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-    }
-
-    .accesories:hover {
-        background-image: url(img/accesories.webp);
-    }
-
-    .flex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .sale-text {
-        color: #FFF;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    .sale-color {
-        color: $colorSelectSite;
-        font-size: 24px;
-        font-weight: 700;
-        text-align: center;
-    }
-}
-
-.featured {
-    &-title {
-        text-align: center;
-        margin-bottom: 3.5%;
-    }
-
-    .title__subtitle {
-        color: #222;
-        font-size: 30px;
-        font-weight: 400;
-    }
-
-    .title__text {
-        color: #9f9f9f;
-        @include font_14_400;
-    }
-
-    &-catalog {
-        display: grid;
-        grid-template-columns: repeat(3, 360px);
-        grid-template-rows: repeat(2, 581px);
-        gap: 30px;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
-        margin-bottom: 4%;
-    }
-
-    @include featured-catalog-all;
-
-    &-button {
-        text-align: center;
-        margin-bottom: 95px
-    }
-
-    .button {
-        border: 1px solid $colorSelectSite;
-        color: white;
-        color: $colorSelectSite;
-        font-size: 16px;
-        font-weight: 400;
-        padding: 1rem 2rem;
-    }
-}
-
 .info {
-    background: #222224;
+    background: $headerFooterColor;
     min-height: 341px;
     @include flex_center;
     flex-direction: row;
@@ -444,33 +293,168 @@ a {
     }
 }
 
-//PRODUCT
+//HOME
 
-.top-head {
-    background: #F8F3F4;
-    min-height: 148px;
+.content {
+    background: #f1e4e6;
     @include flex_center;
-    justify-content: space-between;
-    
+    justify-content: center;
+    margin-bottom: 4%;
 
-    .top__title {
+    &-left {
+        width: 100%;
+    }
+
+    &-right {
+        width: 100%;
+        @include flex_center;
+        gap: 1%;
+        padding-left: 4%;
+    }
+
+    .title {
+        color: #222;
+        font-size: 48px;
+        font-weight: 900;
+    }
+
+    .sudlitle {
+        color: #222;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .color {
         color: $colorSelectSite;
-        font-size: 24px;
+    }
+}
+
+.catalog-sale {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px 180px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 6%;
+
+    .women {
+        background-image: url(img/shadow_sale.svg), url(img/women.webp);
+        width: 360px;
+        height: 260px;
+    }
+
+    .women:hover {
+        background-image: url(img/women.webp);
+    }
+
+    .men {
+        background-image: url(img/shadow_sale.svg), url(img/men.webp);
+        width: 360px;
+        height: 260px;
+    }
+
+    .men:hover {
+        background-image: url(img/men.webp);
+    }
+
+    .kids {
+        background-image: url(img/shadow_sale.svg), url(img/kids.webp);
+        width: 360px;
+        height: 260px;
+    }
+
+    .kids:hover {
+        background-image: url(img/kids.webp);
+    }
+
+    .accesories {
+        background-image: url(img/shadow_sale.svg), url(img/accesories.webp);
+        width: 100%;
+        height: 100%;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .accesories:hover {
+        background-image: url(img/accesories.webp);
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sale-text {
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
         font-weight: 400;
     }
 
-    &__link {
-        color: #636363;
-        font-size: 14px;
-        font-weight: 300;
-    }
-
-    &__linkcolor {
+    .sale-color {
         color: $colorSelectSite;
-        font-size: 14px;
+        font-size: 24px;
         font-weight: 700;
+        text-align: center;
     }
 }
+
+.featured {
+    &-title {
+        text-align: center;
+        margin-bottom: 3.5%;
+    }
+
+    .title__subtitle {
+        color: #222;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .title__text {
+        color: #9f9f9f;
+        @include font_14_400;
+    }
+
+    &-catalog {
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(2, 581px);
+        gap: 30px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin-bottom: 4%;
+    }
+
+    @include featured-catalog-all;
+
+    &-button {
+        text-align: center;
+        margin-bottom: 95px
+    }
+
+    .button {
+        border: 1px solid $colorSelectSite;
+        color: white;
+        color: $colorSelectSite;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 1rem 2rem;
+    }
+    
+    .button:hover {
+        color: white;
+        background: $colorSelectSite;
+    }
+}
+
+//PRODUCT
+
+@include top-head-all;
 
 .carousel {
     background: #F7F7F7;
@@ -599,54 +583,7 @@ a {
 
 // CATALOG
 
-.top-head {
-    background: #F8F3F4;
-    padding: 60px 230px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &__heading {
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        color: $colorSelectSite;
-    }
-
-    .breadcrumbs {
-        display: flex;
-
-
-        &__link {
-            color: #636363;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-            transition: 0.3s;
-        }
-
-        &__link:hover {
-            color: $colorSelectSite;
-        }
-
-        &__link_site:hover {
-            text-shadow: 1px 1px 1px $primaryTextColor;
-        }
-    }
-
-    .breadcrumbs__link:not(:last-child)::after {
-        content: "/";
-        padding: 0 8px;
-    }
-
-    .breadcrumbs__link:last-child {
-        font-weight: 700;
-        color: $colorSelectSite;
-    }
-}
-
+@include top-head-all;
 
 .featured-catalog-men {
     display: grid;
@@ -662,9 +599,36 @@ a {
 
 }
 
+.pagination {
+    width: 284px;
+    height: 44px;
+    margin: 0 auto;
+    border: 1px solid #ebebeb;
+    margin-top: 48px;
+    padding: 13px 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.pagination a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    color: #c4c4c4;
+}
+
+.pagination a:hover {
+    color: #ef5b70;
+    path {
+        fill: #ef5b70;
+    }
+}
+    
+
 .filter-sort {
     display: flex;
-    height: 132px;
     position: relative;
     gap: $gapGrid;
     padding-top: 39px;
@@ -758,7 +722,6 @@ a {
             color: $colorSelectSite;
         }
     }
-
 }
 
 .sort {
@@ -824,3 +787,4 @@ a {
         top: 20px;
     }
 }
+
