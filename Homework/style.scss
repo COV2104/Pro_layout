@@ -550,20 +550,29 @@ a {
         display: flex;
     }
 
-    .add-cart {
-        width: 212px;
-        height: 48px;
-        border: 2px solid $colorSelectSite;
-        @include flex_center;
-        justify-content: center;
-        gap: 23px;
+    &-button {
+        text-align: center;
         margin-bottom: 65px;
     }
 
-    .cart {
+    .button {
+        border: 1px solid $colorSelectSite;
+        color: white;
         color: $colorSelectSite;
         font-size: 16px;
         font-weight: 400;
+        padding: 1rem 2rem;
+        @include flex_center;
+        justify-content: center;
+        gap: 23px;
+    }
+    
+    .button:hover {
+        color: white;
+        background: $colorSelectSite;
+        path {
+            fill: white;
+        }
     }
 }
 
@@ -787,4 +796,6 @@ a {
         top: 20px;
     }
 }
+
+
 

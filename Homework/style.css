@@ -577,20 +577,28 @@ a {
 .product-info .selection {
   display: flex;
 }
-.product-info .add-cart {
-  width: 212px;
-  height: 48px;
-  border: 2px solid #F16D7F;
+.product-info-button {
+  text-align: center;
+  margin-bottom: 65px;
+}
+.product-info .button {
+  border: 1px solid #F16D7F;
+  color: white;
+  color: #F16D7F;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 23px;
-  margin-bottom: 65px;
 }
-.product-info .cart {
-  color: #F16D7F;
-  font-size: 16px;
-  font-weight: 400;
+.product-info .button:hover {
+  color: white;
+  background: #F16D7F;
+}
+.product-info .button:hover path {
+  fill: white;
 }
 
 .featured-catalog-product {
