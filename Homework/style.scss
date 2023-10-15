@@ -17,7 +17,7 @@ summary::-webkit-details-marker {
 
 body {
     font-family: "Lato", sans-serif;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -76,11 +76,6 @@ a {
     &:checked~.slide__menu {
         right: 0;
     }
-}
-
-.box-content {
-    overflow: hidden;
-    //для того, чтобы из-за скрытого справа меню не появлялась полоса прокрутки
 }
 
 .slide__menu {
@@ -168,6 +163,7 @@ a {
         text-align: center;
         font-size: 13.972px;
         font-weight: 300;
+        width: 360px;
     }
 }
 
@@ -302,8 +298,8 @@ a {
     justify-content: center;
     margin-bottom: 4%;
 
-    &-left {
-        width: 100%;
+    &__img {
+        width: 700px;
     }
 
     &-right {
@@ -319,7 +315,7 @@ a {
         font-weight: 900;
     }
 
-    .sudlitle {
+    .subtitle {
         color: #222;
         font-size: 32px;
         font-weight: 700;
@@ -645,6 +641,8 @@ a {
     position: relative;
     gap: $gapGrid;
     padding-top: 39px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .filter {
@@ -1137,10 +1135,184 @@ a {
             list-style-image: url(img/checkmark.svg);
             padding-left: 24px;
         }
-        
+
         &_li {
             padding-left: 14px;
         }
-        
+
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .center {
+        padding-left: calc(50% - 367px);
+        padding-right: calc(50% - 367px);
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 48px;
+        padding-left: 14%;
+        padding-right: 14%;
+        background-position: -230px center;
+        background-size: cover;
+        padding-top: 53px;
+        padding-bottom: 140px;
+
+        .review {
+            width: 50%;
+        }
+    }
+
+    //HOME
+
+    .content {
+        margin-bottom: 2%;
+
+        &__img {
+            width: 386px;
+            height: 370px;
+        }
+
+        .title {
+            color: $headerFooterColor;
+            font-size: 44px;
+            font-weight: 900;
+        }
+
+        .subtitle {
+            color: $headerFooterColor;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .color {
+            color: $colorSelectSite;
+        }
+    }
+
+    .catalog-sale {
+        grid-template-columns: repeat(3, 231px);
+        grid-template-rows: 167px 116px;
+        gap: 19px;
+
+        .women,
+        .men,
+        .kids {
+            background-size: cover;
+            background-position: center;
+            width: 231px;
+            height: 167px;
+        }
+
+        .women:hover,
+        .men:hover,
+        .kids:hover,
+        .accesories:hover,
+        .accesories {
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+
+    .featured {
+        
+        &-catalog {
+            grid-template-columns: repeat(2, 360px);
+            grid-template-rows: repeat(3, 581px);
+            gap: 19px;           
+        }
+    
+    }
+
+    //CATALOG   
+
+    .featured-catalog-men {
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(4, 581px);    
+    }
+
+    .item__rm {
+        display: none;
+    }
+
+    //PRODUCT
+
+    .featured-catalog-product {
+        grid-template-columns: repeat(2, 360px);  
+    }
+
+
+    //CART
+
+    .cart__content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 60px;
+
+        &__products {
+            margin-bottom: 62px;
+        }
+
+        &__buttons {
+            justify-content: center;
+            gap: 48px;
+        }
+
+        &__right {
+            width: 100%;
+            margin-top: 64px;
+            padding-left: 16px;
+            padding-right: 16px;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 16px;
+
+            .address__form {
+                width: 48%;
+            }
+
+            .total__price-box {
+                width: 48%;
+                margin-top: 40px;
+                height: 214px;
+            }
+        }
+    }
+
+    //REGISTRATION
+
+    .registration {
+        gap: 23px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &__form {
+            width: 48%;
+        }
+
+        &__perks {
+            width: 48%;
+            font-size: 16px;
+
+            &_heading {
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+}
+

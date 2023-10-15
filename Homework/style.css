@@ -68,10 +68,6 @@ a {
   right: 0;
 }
 
-.box-content {
-  overflow: hidden;
-}
-
 .slide__menu {
   background: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -150,6 +146,7 @@ a {
   text-align: center;
   font-size: 13.972px;
   font-weight: 300;
+  width: 360px;
 }
 
 .subscribe {
@@ -273,8 +270,8 @@ a {
   justify-content: center;
   margin-bottom: 4%;
 }
-.content-left {
-  width: 100%;
+.content__img {
+  width: 700px;
 }
 .content-right {
   width: 100%;
@@ -288,7 +285,7 @@ a {
   font-size: 48px;
   font-weight: 900;
 }
-.content .sudlitle {
+.content .subtitle {
   color: #222;
   font-size: 32px;
   font-weight: 700;
@@ -810,6 +807,8 @@ a {
   position: relative;
   gap: 30px;
   padding-top: 39px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .filter {
@@ -1288,4 +1287,134 @@ a {
 }
 .registration__perks_li {
   padding-left: 14px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 367px);
+    padding-right: calc(50% - 367px);
+  }
+  .info {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .subscribe {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding-left: 14%;
+    padding-right: 14%;
+    background-position: -230px center;
+    background-size: cover;
+    padding-top: 53px;
+    padding-bottom: 140px;
+  }
+  .subscribe .review {
+    width: 50%;
+  }
+  .content {
+    margin-bottom: 2%;
+  }
+  .content__img {
+    width: 386px;
+    height: 370px;
+  }
+  .content .title {
+    color: #222;
+    font-size: 44px;
+    font-weight: 900;
+  }
+  .content .subtitle {
+    color: #222;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content .color {
+    color: #F16D7F;
+  }
+  .catalog-sale {
+    grid-template-columns: repeat(3, 231px);
+    grid-template-rows: 167px 116px;
+    gap: 19px;
+  }
+  .catalog-sale .women,
+  .catalog-sale .men,
+  .catalog-sale .kids {
+    background-size: cover;
+    background-position: center;
+    width: 231px;
+    height: 167px;
+  }
+  .catalog-sale .women:hover,
+  .catalog-sale .men:hover,
+  .catalog-sale .kids:hover,
+  .catalog-sale .accesories:hover,
+  .catalog-sale .accesories {
+    background-size: cover;
+    background-position: center;
+  }
+  .featured-catalog {
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: repeat(3, 581px);
+    gap: 19px;
+  }
+  .featured-catalog-men {
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: repeat(4, 581px);
+  }
+  .item__rm {
+    display: none;
+  }
+  .featured-catalog-product {
+    grid-template-columns: repeat(2, 360px);
+  }
+  .cart__content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 60px;
+  }
+  .cart__content__products {
+    margin-bottom: 62px;
+  }
+  .cart__content__buttons {
+    justify-content: center;
+    gap: 48px;
+  }
+  .cart__content__right {
+    width: 100%;
+    margin-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .cart__content__right .address__form {
+    width: 48%;
+  }
+  .cart__content__right .total__price-box {
+    width: 48%;
+    margin-top: 40px;
+    height: 214px;
+  }
+  .registration {
+    gap: 23px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .registration__form {
+    width: 48%;
+  }
+  .registration__perks {
+    width: 48%;
+    font-size: 16px;
+  }
+  .registration__perks_heading {
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
